@@ -1,7 +1,5 @@
+import { Home } from "./pages/home/Home";
+
 export const App = () => {
-  return (
-    <>
-    bookFinder
-    </>
-  );
+  return <Home />;
 };
