@@ -1,13 +1,15 @@
+// main.tsx
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
 import { App } from "./App";
-import { HeroUIProvider } from "@heroui/react";
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import theme from "./theme"; 
 
 createRoot(document.getElementById("root")!).render(
-  <HeroUIProvider>
-    <StrictMode>
+  <StrictMode>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <App />
-    </StrictMode>
-  </HeroUIProvider>,
+    </ThemeProvider>
+  </StrictMode>,
 );
