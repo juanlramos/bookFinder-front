@@ -149,7 +149,7 @@ The API URL configuration is done through environment variables (`VITE_API_URL`)
 Create a `.env` file in the project root:
 
 ```env
-VITE_API_URL=http://localhost:3000
+VITE_API_URL=
 ```
 
 ---
