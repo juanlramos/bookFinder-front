@@ -2,9 +2,15 @@ import { Api } from "../axios";
 import type { TBook } from "./types";
 
 const BookService = {
-  getAll: async () => {
-    const { data } = await Api.get<TBook[]>("/books");
-    return data;
+  getRecommendations: async (tags: string[]): Promise<TBook[]> => {
+    const response = await Api.post(
+      `${import.meta.env.VITE_API_URL}/recommend`,
+      {
+        tags: tags,
+      },
+    );
+
+    return response.data;
   },
 };
 

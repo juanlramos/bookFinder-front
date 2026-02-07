@@ -1,4 +1,10 @@
 export type TBook = {
-  id: number;
   title: string;
+  authors: string[];
+  description: string;
+  pageCount: number;
+  averageRating: number;
+  thumbnail: string;
+  previewLink: string;
+  reason: string;
 };
