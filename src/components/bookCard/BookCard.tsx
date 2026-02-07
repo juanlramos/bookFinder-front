@@ -1,5 +1,5 @@
 import { Box, Card, CardContent, Checkbox, Typography } from "@mui/material";
-import { FaRegHeart, FaHeart, FaStar, FaBookOpen } from "react-icons/fa";
+import { FaRegHeart, FaHeart } from "react-icons/fa";
 
 interface BookCardProps {
   title: string;
